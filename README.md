@@ -57,6 +57,18 @@ Services are listed **alphabetically**. Listing does not imply endorsement.
 | **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
 | **Notable Features** | Enterprise-oriented; focuses on GPT model access; suitable for business use cases requiring stable GPT access |
 
+### CoderPlan
+
+| Field | Details |
+|-------|---------|
+| **Website** | [coderplan.ai](https://coderplan.ai) |
+| **Models** | Claude (Opus / Sonnet / Haiku), GPT-5.5 / GPT-4o, Gemini 3, DeepSeek, Qwen |
+| **Payment** | CNY (Alipay / WeChat Pay), credit card |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
+| **Notable Features** | Unified LLM API gateway with one-line configuration for Claude Code, Codex CLI, and Gemini CLI; pay-per-use with transparent pricing |
+
+---
+
 ---
 
 ### Ofox.ai
@@ -230,6 +242,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 |------|------|---------|---------|-----------|------|
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
+| **CoderPlan** | coderplan.ai | Claude + GPT + Gemini + DeepSeek + Qwen | 人民币（支付宝/微信）、信用卡 | OpenAI 兼容 | 统一 API 网关，支持 Claude Code / Codex CLI / Gemini CLI 一键配置 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **YAPI** | yapi.uk | Claude + GPT + Gemini + DeepSeek | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，支持原生 Claude 格式 |
 
