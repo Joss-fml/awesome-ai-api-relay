@@ -59,6 +59,25 @@ Services are listed **alphabetically**. Listing does not imply endorsement.
 
 ---
 
+### CoderPlan
+
+| Field | Details |
+|-------|---------|
+| **Website** | [coderplan.ai](https://coderplan.ai) |
+| **Models** | Claude (Opus / Sonnet / Haiku), GPT-5.5 / GPT-4.1 series, Gemini 3.1 Pro, DeepSeek V3 / R1, and 100+ models |
+| **Payment** | CNY (Alipay / WeChat Pay); pay-per-use, no subscription required; ¥10 minimum top-up |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) + Anthropic-compatible (`/v1/messages`) |
+| **Notable Features** | Domestic network optimization for Chinese developers; per-call billing transparency; built-in usage analytics; supports both OpenAI and Anthropic native API formats |
+
+**Supported model families:**
+
+- `claude-opus-4`, `claude-sonnet-4`, `claude-haiku-4` (Anthropic)
+- `gpt-4o`, `gpt-4.1`, `gpt-4.1-mini` (OpenAI)
+- `gemini-3.1-pro` (Google)
+- `deepseek-chat`, `deepseek-reasoner` (DeepSeek)
+
+---
+
 ### Ofox.ai
 
 | Field | Details |
@@ -230,6 +249,8 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 |------|------|---------|---------|-----------|------|
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
+| **CoderPlan** | coderplan.ai | Claude/GPT/Gemini/DeepSeek 等 100+ 模型 | 支付宝/微信，按量付费 | OpenAI + Anthropic 兼容 | 国内网络优化，按量付费，内置用量分析 |
+
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **YAPI** | yapi.uk | Claude + GPT + Gemini + DeepSeek | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，支持原生 Claude 格式 |
 
