@@ -71,6 +71,18 @@ Services are listed **alphabetically**. Listing does not imply endorsement.
 
 ---
 
+### Tokens Forge
+
+| Field | Details |
+|-------|---------|
+| **Website** | [tokens-forge.com](https://tokens-forge.com) |
+| **Models** | GPT, Claude, Gemini, and routed models |
+| **Payment** | Stripe / WeChat; credit-based system |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
+| **Notable Features** | Multi-model API gateway with API key management, usage ledgers, separate official Credit and routed wallet balances, and built-in AI research workflows |
+
+---
+
 ### YAPI
 
 | Field | Details |
@@ -231,6 +243,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
+| **Tokens Forge** | tokens-forge.com | GPT、Claude、Gemini 与路由模型 | Stripe / 微信；Credit 钱包体系 | OpenAI 兼容 | 多模型 API 网关，支持 API Key 管理、用量账本、官方 Credit 与普通路由余额区分，并提供 AI 研究工作流 |
 | **YAPI** | yapi.uk | Claude + GPT + Gemini + DeepSeek | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，支持原生 Claude 格式 |
 
 ### 免责声明
