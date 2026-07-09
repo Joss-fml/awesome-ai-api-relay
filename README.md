@@ -71,6 +71,18 @@ Services are listed **alphabetically**. Listing does not imply endorsement.
 
 ---
 
+### RunAPI
+
+| Field | Details |
+|-------|---------|
+| **Website** | [runapi.ai](https://runapi.ai) |
+| **Models** | Multiple model families for LLM, image, video, and audio/music workflows |
+| **Payment** | Check website for current options |
+| **API Compatibility** | OpenAI-compatible (`/v1`) |
+| **Notable Features** | Unified model API with public docs and SDKs for model job workflows |
+
+---
+
 ### YAPI
 
 | Field | Details |
