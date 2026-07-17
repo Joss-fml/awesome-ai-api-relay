@@ -111,6 +111,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### qionggeme
+
+| Field | Details |
+|-------|---------|
+| **Website** | [qionggeme.com](https://qionggeme.com) |
+| **Models** | Claude (Opus / Sonnet / Haiku), GPT-4o / GPT-5 series, Gemini Pro / Flash, DeepSeek, Grok, and more |
+| **Payment** | CNY / credit-based |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
+| **Notable Features** | Hong Kong-based relay; broad model coverage across major providers; transparent per-model pricing with itemized input/output billing; client integration guides (Claude Code, Cherry Studio, NextChat) |
+
+---
+
 ### SiliconFlow
 
 | Field | Details |
@@ -322,6 +334,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **DMXAPI** | dmxapi.cn | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 多上游聚合，社区常见 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
+| **qionggeme** | qionggeme.com | Claude + GPT + Gemini + DeepSeek + Grok | 人民币 / 额度 | OpenAI 兼容 | 香港线路，模型覆盖广，输入输出分开计费，附客户端接入教程 |
 | **SiliconFlow 硅基流动** | siliconflow.cn | 开源 / 多模态模型 | 人民币 / 额度 | OpenAI 兼容 | 专注开源模型托管，公司运营 |
 | **YAPI** | yapi.uk | Claude + GPT + Gemini + DeepSeek | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，同端点支持原生 Claude 格式，账单可追溯 |
 
