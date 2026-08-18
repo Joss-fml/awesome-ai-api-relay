@@ -49,6 +49,19 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 | **API Compatibility** | OpenAI-compatible |
 | **Notable Features** | Well-known aggregation platform; broad model coverage |
 
+
+---
+
+### GODS
+
+| Field | Details |
+|-------|---------|
+| **Website** | [meisgold.top](https://meisgold.top) |
+| **Models** | GPT-5, Claude, and other series |
+| **Payment** | CNY (Alipay / WeChat Pay) |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
+| **Notable Features** | One of the earliest relay services in the Chinese market; stable and well-established; straightforward credit system |
+
 ---
 
 ### API2D
