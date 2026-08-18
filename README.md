@@ -60,7 +60,7 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 | **Models** | GPT-5, Claude, and other series |
 | **Payment** | CNY (Alipay / WeChat Pay) |
 | **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
-| **Notable Features** | One of the earliest relay services in the Chinese market; stable and well-established; straightforward credit system |
+| **Notable Features** | Stable service, GPT multiplier as low as 0.06, first‑token latency within 5 seconds |
 
 ---
 
