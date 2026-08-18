@@ -49,6 +49,19 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 | **API Compatibility** | OpenAI-compatible |
 | **Notable Features** | Well-known aggregation platform; broad model coverage |
 
+
+---
+
+### GODS
+
+| Field | Details |
+|-------|---------|
+| **Website** | [meisgold.top](https://meisgold.top) |
+| **Models** | GPT-5, Claude, and other series |
+| **Payment** | CNY (Alipay / WeChat Pay) |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
+| **Notable Features** | Stable service, GPT multiplier as low as 0.06, first‑token latency within 5 seconds |
+
 ---
 
 ### API2D
