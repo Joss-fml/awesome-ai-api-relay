@@ -123,6 +123,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### XiuRouter
+
+| Field | Details |
+|-------|---------|
+| **Website** | [router.xiu.ai](https://router.xiu.ai) |
+| **Models** | Claude, GPT, Gemini, and other models |
+| **Payment** | Usage-based pricing in USD, with CNY estimates shown |
+| **API Compatibility** | OpenAI Responses and Chat Completions, Anthropic Messages, and Gemini GenerateContent |
+| **Notable Features** | Client-specific setup paths for 14 apps, scoped API keys, and request-level usage and cost records |
+
+---
+
 ### YAPI
 
 | Field | Details |
@@ -323,6 +335,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
 | **SiliconFlow 硅基流动** | siliconflow.cn | 开源 / 多模态模型 | 人民币 / 额度 | OpenAI 兼容 | 专注开源模型托管，公司运营 |
+| **XiuRouter** | router.xiu.ai | Claude、GPT、Gemini 等 | 按量计费（美元） | OpenAI Responses / Chat Completions、Anthropic Messages、Gemini GenerateContent | 按客户端提供接入路径，支持受限 API Key 和请求级用量 / 费用记录 |
 | **YAPI** | yapi.uk | Claude + GPT + Gemini + DeepSeek | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，同端点支持原生 Claude 格式，账单可追溯 |
 
 ### 如何挑选中转服务（6 个硬指标）
