@@ -128,17 +128,17 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 | Field | Details |
 |-------|---------|
 | **Website** | [yapi.uk](https://yapi.uk) |
-| **Models** | Claude (Opus / Sonnet / Haiku), GPT-4 / GPT-4o / GPT-5 series, Gemini Pro / Flash, DeepSeek V3 / R1, and more |
+| **Models** | Claude (Opus 4.6–4.8 / Opus 5 / Sonnet 4.6 / Sonnet 5), GPT-5.5 / GPT-5.6 series / GPT-6 Astra, DeepSeek V4 (Pro / Flash), GLM-5.2 / GLM-5.3, Kimi K3 |
 | **Payment** | CNY (Alipay / WeChat Pay); credit-based system |
 | **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) + Anthropic-compatible (`/v1/messages`) |
 | **Notable Features** | Multi-model aggregation across major providers; supports both OpenAI and Anthropic native API formats in one endpoint; itemized billing; suitable for developers who need to switch between Claude and GPT in the same project |
 
 **Supported model families:**
 
-- `claude-opus-4`, `claude-sonnet-4`, `claude-haiku-4` (Anthropic)
-- `gpt-4o`, `gpt-4-turbo`, `gpt-4.1` / `gpt-5` series (OpenAI)
-- `gemini-1.5-pro`, `gemini-1.5-flash` (Google)
-- `deepseek-chat`, `deepseek-reasoner` (DeepSeek)
+- `claude-opus-4-6`, `claude-opus-4-7`, `claude-opus-4-8`, `claude-opus-5`, `claude-sonnet-4-6`, `claude-sonnet-5` (Anthropic)
+- `gpt-5.5`, `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`, `gpt-6-astra` (OpenAI)
+- `deepseek-v4-pro`, `deepseek-v4-flash` (DeepSeek)
+- `GLM-5.2`, `GLM-5.3`, `kimi-k3`
 
 ---
 
@@ -323,7 +323,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
 | **SiliconFlow 硅基流动** | siliconflow.cn | 开源 / 多模态模型 | 人民币 / 额度 | OpenAI 兼容 | 专注开源模型托管，公司运营 |
-| **YAPI** | yapi.uk | Claude + GPT + Gemini + DeepSeek | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，同端点支持原生 Claude 格式，账单可追溯 |
+| **YAPI** | yapi.uk | Claude + GPT + DeepSeek + GLM + Kimi | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，同端点支持原生 Claude 格式，账单可追溯 |
 
 ### 如何挑选中转服务（6 个硬指标）
 
@@ -344,7 +344,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 
 ## Changelog
 
-- **2026-09-27** — Periodic review: entry details re-checked and freshness badge updated.
+- **2026-09-27** — Periodic review: entry details re-checked; freshness badge updated; the **YAPI entry's model list was corrected against its live pricing endpoint** (it had listed Gemini models the service does not currently offer).
   Platform sites are re-probed on each review cycle; entries whose site could not be
   reached from our verification host this cycle are queued for re-verification.
 - **2026-07-16** — Expanded list (AiHubMix, DMXAPI, OpenRouter, SiliconFlow); added FAQ,
