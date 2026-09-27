@@ -75,6 +75,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### Deep Space API
+
+| Field | Details |
+|-------|---------|
+| **Website** | [api.91kun.top](https://api.91kun.top) |
+| **Models** | GPT, DeepSeek, Claude, Gemini, Grok, GLM, Kimi, Qwen |
+| **Payment** | CNY (Alipay) |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) |
+| **Notable Features** | Unified gateway for multiple model families; per-request usage logs allow billing audit; multipliers range from x0.1 to x1.3 against official list prices; minimum top-up CNY 5 |
+
+---
+
 ### DMXAPI
 
 | Field | Details |
@@ -319,6 +331,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **AiHubMix** | aihubmix.com | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 知名聚合平台，模型覆盖广 |
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
+| **Deep Space API 深空 API** | api.91kun.top | GPT / DeepSeek / Claude / Gemini / Grok / GLM / Kimi / Qwen | 人民币（支付宝） | OpenAI 兼容 | 用量明细可逐条对账，倍率 x0.1~x1.3，5 元起充 |
 | **DMXAPI** | dmxapi.cn | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 多上游聚合，社区常见 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
