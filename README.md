@@ -191,7 +191,7 @@ client = OpenAI(
 )
 
 response = client.chat.completions.create(
-    model="gpt-4o",             # or claude-sonnet-4, gemini-1.5-pro, etc.
+    model="gpt-5.6-sol",        # or claude-sonnet-4-6, deepseek-v4-pro, etc.
     messages=[
         {"role": "user", "content": "Hello, world!"}
     ]
