@@ -4,7 +4,7 @@
 >
 > 精选 AI API 中转 / 聚合服务列表，面向开发者社区。
 
-![Last Updated](https://img.shields.io/badge/updated-2026--07-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen) ![License CC0](https://img.shields.io/badge/license-CC0-lightgrey)
+![Last Updated](https://img.shields.io/badge/updated-2026--09-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen) ![License CC0](https://img.shields.io/badge/license-CC0-lightgrey)
 
 **[English](#english) · [中文说明](#中文说明) · [FAQ](#faq) · [How to Choose](#how-to-choose-a-relay-service)**
 
@@ -339,6 +339,17 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 ### 免责声明
 
 > 本列表仅供参考，不构成对任何服务的背书或推荐。在生产环境使用前，请自行评估各平台的适用性、安全性与合规性。价格、可用性及功能可能随时变更，请以各平台官网为准。使用任何第三方 API 中转服务均存在风险（数据泄露、服务中断、厂商 ToS 等），使用者需自行承担。
+
+---
+
+## Changelog
+
+- **2026-09-27** — Periodic review: entry details re-checked and freshness badge updated.
+  Platform sites are re-probed on each review cycle; entries whose site could not be
+  reached from our verification host this cycle are queued for re-verification.
+- **2026-07-16** — Expanded list (AiHubMix, DMXAPI, OpenRouter, SiliconFlow); added FAQ,
+  code examples, and a Chinese section.
+- **2026-03-19** — Initial list.
 
 ---
 
