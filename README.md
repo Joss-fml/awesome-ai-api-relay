@@ -75,6 +75,16 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### DSH API
+
+| Field | Details |
+|-------|---------|
+| **Website** | [api.dshapi.icu](https://api.dshapi.icu) |
+| **Models** | DeepSeek V4 (Flash / V4.1 Flash / Pro), GLM-5.2 / GLM-5.3 / GLM-5.3 Flash, Kimi K2.8 / K3, MiniMax M3, Hunyuan 3 / 4; GPT-6 series via dedicated group |
+| **Payment** | Alipay / WeChat Pay (CNY), pay-as-you-go credit, no expiry |
+| **API Compatibility** | OpenAI-compatible (`/v1/models`, `/v1/chat/completions`, `/v1/responses`) and Anthropic-compatible (`/v1/messages`) on the same base URL |
+| **Notable Features** | Dual-protocol endpoint verified working for both Claude Code and Codex CLI without code changes. CNY Alipay/WeChat top-up, QQ-mail signup (no overseas card). Tiered group rate multipliers published in the console; itemized per-request billing with CSV export. |
+
 ### DMXAPI
 
 | Field | Details |
