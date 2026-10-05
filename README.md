@@ -87,6 +87,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### ModelRush
+
+| Field | Details |
+|-------|---------|
+| **Website** | [modelrush.ai](https://modelrush.ai/) |
+| **Models** | Text, image, video and voice models; see the [current catalog](https://modelrush.ai/models) |
+| **Payment** | Paid prepaid usage credits; no ongoing free tier or trial |
+| **API Compatibility** | OpenAI-compatible chat; model-specific media endpoints |
+| **Notable Features** | Hosted API gateway and browser Playground; proprietary service with an age-restricted Spicy catalog; [documentation](https://modelrush.ai/docs) |
+
+---
+
 ### Ofox.ai
 
 | Field | Details |
@@ -320,6 +332,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
 | **DMXAPI** | dmxapi.cn | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 多上游聚合，社区常见 |
+| **ModelRush** | [modelrush.ai](https://modelrush.ai/) | 文本、图像、视频、语音 | 预付额度按用量计费，无长期免费层或试用 | 聊天兼容 OpenAI；媒体接口按模型定义 | 托管 API 网关与浏览器 Playground；商业专有服务，含年龄限制 Spicy 分类 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
 | **SiliconFlow 硅基流动** | siliconflow.cn | 开源 / 多模态模型 | 人民币 / 额度 | OpenAI 兼容 | 专注开源模型托管，公司运营 |
