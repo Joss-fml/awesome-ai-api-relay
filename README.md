@@ -87,6 +87,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### LinkAGI
+
+| Field | Details |
+|-------|---------|
+| **Website** | [api.linktoagi.com](https://api.linktoagi.com/) |
+| **Models** | GPT, Claude, Gemini, Grok, DeepSeek and GLM families; see the [current catalog](https://api.linktoagi.com/pricing) for model IDs and groups |
+| **Payment** | CNY / usage-based account credit |
+| **API Compatibility** | OpenAI-compatible; base URL `https://api.linktoagi.com/v1` |
+| **Notable Features** | Separate API keys per project, model/group selection, per-request token and charge records; [Chinese documentation](https://docs.linktoagi.com/) and [public pricing data](https://api.linktoagi.com/api/pricing) |
+
+---
+
 ### Ofox.ai
 
 | Field | Details |
@@ -320,6 +332,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
 | **DMXAPI** | dmxapi.cn | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 多上游聚合，社区常见 |
+| **LinkAGI** | [api.linktoagi.com](https://api.linktoagi.com/) | GPT / Claude / Gemini / Grok / DeepSeek / GLM | 人民币 / 按量计费 | OpenAI 兼容 | 项目独立 Key、模型分组、逐次 Token 与扣费记录 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
 | **SiliconFlow 硅基流动** | siliconflow.cn | 开源 / 多模态模型 | 人民币 / 额度 | OpenAI 兼容 | 专注开源模型托管，公司运营 |
