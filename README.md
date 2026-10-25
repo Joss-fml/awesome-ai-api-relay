@@ -123,6 +123,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### Twinkle Model
+
+| Field | Details |
+|-------|---------|
+| **Website** | [big-model.smart-agi.com](https://big-model.smart-agi.com) |
+| **Models** | GPT series, Claude, Grok, GLM, DeepSeek, Kimi; image (gpt-image-2/2.5) and video (Seedance 2.x, Wan 3.0) |
+| **Payment** | CNY via Alipay (top-up from ¥1, invoices available) |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`), base URL `https://big-model.smart-agi.com/v1` |
+| **Notable Features** | Built on open-source sub2api; official-subscription channels; per-group multiplier pricing published on the model plaza |
+
+---
+
 ### YAPI
 
 | Field | Details |
