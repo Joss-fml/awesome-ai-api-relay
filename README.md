@@ -75,6 +75,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### Code By AI
+
+| Field | Details |
+|-------|---------|
+| **Website** | [codebyai.net](https://www.codebyai.net) |
+| **Models** | Claude series, GPT / Codex series, Gemini series |
+| **Payment** | Prepaid USD balance, debited per token (no subscription) |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`, `/v1/responses`) + Anthropic Messages (`/v1/messages`) + Google Gemini (`generateContent`), base URL `https://www.codebyai.net/api/agent/v1` |
+| **Notable Features** | One key and one balance across native API formats; setup guides for Claude Code, Codex, Gemini CLI and other agents, plus a one-command setup script; free signup without a card, API usage requires a top-up |
+
+---
+
 ### DMXAPI
 
 | Field | Details |
@@ -319,6 +331,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **AiHubMix** | aihubmix.com | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 知名聚合平台，模型覆盖广 |
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
+| **Code By AI** | codebyai.net | Claude + GPT/Codex + Gemini | 美元预付余额，按 token 扣费 | OpenAI + Anthropic + Gemini 原生格式 | 一个 Key 调用多家模型，提供 Claude Code / Codex / Gemini CLI 配置文档 |
 | **DMXAPI** | dmxapi.cn | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 多上游聚合，社区常见 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
