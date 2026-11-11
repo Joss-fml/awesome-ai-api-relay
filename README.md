@@ -4,7 +4,9 @@
 >
 > 精选 AI API 中转 / 聚合服务列表，面向开发者社区。
 
-![Last Updated](https://img.shields.io/badge/updated-2026--09-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen) ![License CC0](https://img.shields.io/badge/license-CC0-lightgrey)
+![Last Updated](https://img.shields.io/badge/updated-2026--09-blue)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+![License CC0](https://img.shields.io/badge/license-CC0-lightgrey)
 
 **[English](#english) · [中文说明](#中文说明) · [FAQ](#faq) · [How to Choose](#how-to-choose-a-relay-service)**
 
@@ -33,7 +35,7 @@ To be listed here, a service should:
 - ✅ Offer a clear pricing or credit system
 - ✅ Be actively maintained (last observed update within 6 months)
 
-Services are listed **alphabetically**. Listing does **not** imply endorsement. Always evaluate a service independently before production use.
+Services are listed **alphabetically**. Listing does **not** imply endorsement. Always evaluate a service independently before use.
 
 ---
 
@@ -111,6 +113,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### Qora API
+
+| Field | Details |
+|-------|---------|
+| **Website** | [qoraapi.com](https://qoraapi.com) |
+| **Models** | Claude, GPT, Gemini, Grok, DeepSeek, GLM, Qwen (45+ models) |
+| **Payment** | Card; minimum top-up $50 |
+| **API Compatibility** | OpenAI-compatible (`/v1/chat/completions`) + Anthropic-compatible (`/v1/messages`; `ANTHROPIC_BASE_URL=https://qoraapi.com`) |
+| **Notable Features** | Hosted OpenAI/Anthropic-compatible API gateway (built on new-api) for international users (not mainland China); Base URL `https://qoraapi.com/v1`; live per-model pricing at qoraapi.com/pricing and public JSON at qoraapi.com/api/pricing (ratio-based: `model_ratio × $2 per 1M tokens × group ratio`); status endpoint at qoraapi.com/api/status; docs at qoraapi.com/docs; contact support@qoraapi.com, X [@QoraAPI](https://x.com/QoraAPI) |
+
+---
+
 ### SiliconFlow
 
 | Field | Details |
@@ -160,7 +174,7 @@ Picking a relay is mostly about risk management. Six practical criteria:
 ## FAQ
 
 **Q: What is an AI API relay / proxy service?**
-A: It is an intermediary endpoint that forwards your requests to upstream AI providers (OpenAI, Anthropic, Google, DeepSeek). It gives you a single unified API, local payment options, and centralized billing without needing a foreign card or unrestricted network access.
+A: It is an intermediary endpoint that forwards your requests to upstream AI providers (OpenAI, Anthropic, Google, DeepSeek). It gives a single unified API, local payment options, and centralized billing without needing a foreign card or unrestricted network access.
 
 **Q: Are relay services legal / safe to use?**
 A: Using a relay is a common practice, but each carries operational risk (downtime, billing disputes, provider ToS considerations). Evaluate reliability, security, and compliance yourself before production use. This list does not endorse any service.
@@ -169,7 +183,7 @@ A: Using a relay is a common practice, but each carries operational risk (downti
 A: Most relays are OpenAI-compatible — point the official OpenAI SDK's `base_url` at the relay endpoint and use your relay API key. Anthropic-compatible relays additionally expose `/v1/messages` for native Claude calls. See the [Code Examples](#code-examples) below.
 
 **Q: Which relays support native Anthropic (Claude) format?**
-A: Some relays expose only the OpenAI-compatible `/v1/chat/completions` route, while others also provide Anthropic's native `/v1/messages`. If you use the Anthropic SDK directly, choose a relay that lists Anthropic compatibility (e.g. YAPI).
+A: Some relays expose only the OpenAI-compatible `/v1/chat/completions` route, while others also provide Anthropic's native `/v1/messages`. If you use the Anthropic SDK directly, choose a relay that lists Anthropic compatibility (e.g. YAPI, Qora API).
 
 **Q: How do I avoid getting scammed by a cheap relay?**
 A: Top up small amounts first, run your own benchmark prompts to verify model authenticity and latency, and prefer services with itemized billing you can audit. See [How to Choose](#how-to-choose-a-relay-service).
@@ -186,18 +200,17 @@ These examples use placeholder values. Replace `YOUR_BASE_URL` and `YOUR_API_KEY
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="YOUR_BASE_URL",   # e.g. https://yapi.uk/v1
+    base_url="YOUR_BASE_URL", # e.g. https://yapi.uk/v1
     api_key="YOUR_API_KEY",
 )
 
 response = client.chat.completions.create(
-    model="gpt-5.6-sol",        # or claude-sonnet-4-6, deepseek-v4-pro, etc.
+    model="gpt-5.6-sol", # or claude-sonnet-4-6, deepseek-v4-pro, etc.
     messages=[
         {"role": "user", "content": "Hello, world!"}
     ]
 )
 
-print(response.choices[0].message.content)
 ```
 
 **For Anthropic-format endpoints (Claude native):**
@@ -206,7 +219,7 @@ print(response.choices[0].message.content)
 import anthropic
 
 client = anthropic.Anthropic(
-    base_url="YOUR_BASE_URL",   # e.g. https://yapi.uk
+    base_url="YOUR_BASE_URL", # e.g. https://yapi.uk
     api_key="YOUR_API_KEY",
 )
 
@@ -217,8 +230,6 @@ message = client.messages.create(
         {"role": "user", "content": "Hello, Claude!"}
     ]
 )
-
-print(message.content[0].text)
 ```
 
 ### Node.js
@@ -227,18 +238,16 @@ print(message.content[0].text)
 import OpenAI from "openai";
 
 const client = new OpenAI({
-  baseURL: "YOUR_BASE_URL",   // e.g. https://yapi.uk/v1
+  baseURL: "YOUR_BASE_URL", // e.g. https://yapi.uk/v1
   apiKey: "YOUR_API_KEY",
 });
 
 const response = await client.chat.completions.create({
-  model: "gpt-4o",            // or claude-sonnet-4, deepseek-chat, etc.
+  model: "gpt-4o", // or claude-sonnet-4, deepseek-chat, etc.
   messages: [
     { role: "user", content: "Hello, world!" }
   ],
 });
-
-console.log(response.choices[0].message.content);
 ```
 
 **Using `fetch` directly (framework-agnostic):**
@@ -252,12 +261,9 @@ const response = await fetch("YOUR_BASE_URL/chat/completions", {
   },
   body: JSON.stringify({
     model: "gpt-4o",
-    messages: [{ role: "user", content: "Hello!" }],
+    messages: [{ role: "user", content: "Hello!" }]
   }),
 });
-
-const data = await response.json();
-console.log(data.choices[0].message.content);
 ```
 
 ---
@@ -273,6 +279,7 @@ Contributions are welcome! To add a service:
 5. Open a pull request with a brief description
 
 **Please do not:**
+
 - Include referral/affiliate links
 - Make price comparisons (prices change frequently)
 - Disparage other listed services
@@ -322,15 +329,16 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 | **DMXAPI** | dmxapi.cn | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 多上游聚合，社区常见 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
 | **OpenRouter** | openrouter.ai | 数百款模型 | 额度（国际卡/加密货币） | OpenAI 兼容 | 国际聚合器，按模型透明计价 |
+| **Qora API** | [qoraapi.com](https://qoraapi.com) | Claude / GPT / Gemini / Grok / DeepSeek / GLM / Qwen 等 45+ | 信用卡（最低充值 $50） | OpenAI + Anthropic 双兼容 | 面向国际用户（非中国大陆）的托管 API 中转网关，基于 new-api 构建；Base URL `https://qoraapi.com/v1`，同时提供 Anthropic 原生端点（`ANTHROPIC_BASE_URL=https://qoraapi.com`）；实时按模型计价（qoraapi.com/pricing 及公开 JSON qoraapi.com/api/pricing，比率计价 `model_ratio × $2/1M tokens × group ratio`）；状态页 qoraapi.com/api/status；文档 qoraapi.com/docs；联系 support@qoraapi.com，X [@QoraAPI](https://x.com/QoraAPI) |
 | **SiliconFlow 硅基流动** | siliconflow.cn | 开源 / 多模态模型 | 人民币 / 额度 | OpenAI 兼容 | 专注开源模型托管，公司运营 |
 | **YAPI** | yapi.uk | Claude + GPT + DeepSeek + GLM + Kimi | 人民币（支付宝/微信） | OpenAI + Anthropic 双兼容 | 多模型聚合，同端点支持原生 Claude 格式，账单可追溯 |
 
 ### 如何挑选中转服务（6 个硬指标）
 
 1. **稳定性** — 经常宕机的站反而耽误事，优先选有口碑、有支持渠道的。
-2. **速度** — 返回过慢的接口用起来很难受，先从自己的网络测延迟。
+2. **速度** — 返回过慢的接口用起来就很难受，先从自己的网络测延迟。
 3. **模型覆盖** — 好的站能一站式调用顶尖模型，并尽快上官方新模型。
-4. **账单透明** — 警惕隐形的 token 计数或费率把戏，清晰账单才能事后核查异常。
+4. **账单透明** — 警惕隐形的 token 计数或费率把戏，清晰账单才能事后核查。
 5. **运营方可信度** — 每个站都有跑路风险，优先公司运营，少充勤充。
 6. **模型真实性** — 异常便宜的"旗舰"模型可能被悄悄换成廉价模型，用自己的 prompt 验证。
 
@@ -344,11 +352,8 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 
 ## Changelog
 
-- **2026-09-27** — Periodic review: entry details re-checked; freshness badge updated; the **YAPI entry's model list was corrected against its live pricing endpoint** (it had listed Gemini models the service does not currently offer).
-  Platform sites are re-probed on each review cycle; entries whose site could not be
-  reached from our verification host this cycle are queued for re-verification.
-- **2026-07-16** — Expanded list (AiHubMix, DMXAPI, OpenRouter, SiliconFlow); added FAQ,
-  code examples, and a Chinese section.
+- **2026-09-27** — Periodic review: entry details re-checked; freshness badge updated; the **YAPI entry's model list was corrected against its live pricing endpoint** (it had listed Gemini models the service does not currently offer). Platform sites are re-probed on each review cycle; entries whose site could not be reached from our verification host this cycle are queued for re-verification.
+- **2026-07-16** — Expanded list (AiHubMix, DMXAPI, OpenRouter, SiliconFlow); added FAQ, code examples, and a Chinese section.
 - **2026-03-19** — Initial list.
 
 ---
@@ -356,5 +361,4 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 ## License
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
 This list is released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — free to use, share, and adapt.
