@@ -63,6 +63,18 @@ Services are listed **alphabetically**. Listing does **not** imply endorsement. 
 
 ---
 
+### Beiluo API (北洛API)
+
+| Field | Details |
+|-------|---------|
+| **Website** | [beiluoxi.xyz](https://beiluoxi.xyz/) |
+| **Models** | GPT, Claude, Gemini, Grok and DeepSeek families |
+| **Payment** | Usage-based CNY pricing |
+| **API Compatibility** | [OpenAI, Anthropic Messages and Gemini formats](https://beiluoxi.xyz/help/_full.html) |
+| **Notable Features** | [Public JSON prices](https://beiluoxi.xyz/api/provider/pricing) list input, output and cache rates by model and routing group. |
+
+---
+
 ### CloseAI
 
 | Field | Details |
@@ -318,6 +330,7 @@ AI API 中转服务作为你的应用与上游 AI 提供商（OpenAI、Anthropic
 |------|------|---------|---------|-----------|------|
 | **AiHubMix** | aihubmix.com | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 知名聚合平台，模型覆盖广 |
 | **API2D** | api2d.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 老牌中转，稳定可靠 |
+| **北洛API** | [beiluoxi.xyz](https://beiluoxi.xyz/) | GPT、Claude、Gemini 等 | 人民币按量计费 | OpenAI、Anthropic、Gemini 兼容 | 公开各模型及分组价目 |
 | **CloseAI** | closeai-asia.com | GPT 系列 | 人民币（支付宝/微信） | OpenAI 兼容 | 企业级，GPT 为主 |
 | **DMXAPI** | dmxapi.cn | 多模型聚合 | 人民币 / 额度 | OpenAI 兼容 | 多上游聚合，社区常见 |
 | **Ofox.ai** | ofox.ai | 多模型 | 见官网 | OpenAI 兼容 | 新兴平台，持续扩展 |
